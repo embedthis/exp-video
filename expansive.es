@@ -13,7 +13,7 @@ Expansive.load({
                 blend(video, meta.video)
                 blend(video, options)
                 write('<div class="video">\n')
-                write('    <iframe frameborder="" allowfullscreen="' +
+                write('    <iframe title="video" frameborder="" allowfullscreen="' +
                     (video.full ? '1' : '0') + '" ' +
                     'height="' + video.height + '" ' +
                     'width="' + video.width + '" ' +
