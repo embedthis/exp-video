@@ -1,7 +1,7 @@
 {
     "name": "exp-video",
     "description": "Video Plugin for Expansive",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "keywords": [
         "expansive-plugin",
         "video"
@@ -10,8 +10,5 @@
     "repository": {
         "type": "git",
         "url": "git://github.com/embedthis/exp-video.git"
-    },
-    "pak": {
-        "version": ">=0.10.0"
     }
 }
