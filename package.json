@@ -1,7 +1,7 @@
 {
     "name": "exp-video",
     "description": "Video Plugin for Expansive",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "keywords": [
         "expansive-plugin",
         "video"
