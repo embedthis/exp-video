@@ -49,4 +49,4 @@ This simple plugin provides the **video()** partial function to render inline Yo
 
 ### Get Pak from
 
-[https://embedthis.com/pak/](https://embedthis.com/pak/download.html)
+[https://embedthis.com/pak/](https://embedthis.com/pak/)
