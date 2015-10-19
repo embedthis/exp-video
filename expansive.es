@@ -1,17 +1,14 @@
 Expansive.load({
-    transforms: {
-        name:  'video',
-        height: 390,
-        width: 640,
-        full: true,
-        provider: 'youtube',
+    services: {
+        name:       'video',
+        height:     390,
+        width:      640,
+        full:       true,
+        provider:   'youtube',
 
-        script: `
-            public function video(src, options = {}) {
-                let service = expansive.services['video']
-                let video = service.clone()
-                blend(video, meta.video)
-                blend(video, options)
+        init: function() {
+            global.video = function(src, options = {}) {
+                let video = meta.service
                 write('<div class="video">\n')
                 write('    <iframe title="video" frameborder="" allowfullscreen="' +
                     (video.full ? '1' : '0') + '" ' +
@@ -20,6 +17,6 @@ Expansive.load({
                     'src="' + src + '"></iframe>\n')
                 write('</div>\n')
             }
-        `
+        }
     }
 })
