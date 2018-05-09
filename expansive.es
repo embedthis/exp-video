@@ -45,12 +45,12 @@ Expansive.load({
                     let width = options.width || '100%'
                     let styles = options.styles || ''
                     write('<div class="video-container ' + styles + '">')
-                    write('<script src="' + options.src + '" async></script>')
+                    write('<script src="https://fast.wistia.com/embed/medias/' + options.src + '.jsonp" async></script>')
                     write('<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>')
                     write('<div class="wistia_responsive_padding" style="color: green;padding:56.25% 0 0 0;position:relative;">')
                     write('<div class="wistia_responsive_wrapper" style="height:' + height +
                         ';position:absolute;top:0;left:0;width:' + width + ';">')
-                    write('<div class="wistia_embed wistia_async_4cttqu65jz videoFoam=true" style="height:100%;width:100%">&nbsp;</div>')
+                    write('<div class="wistia_embed wistia_async_' + options.src + ' videoFoam=true" style="height:100%;width:100%">&nbsp;</div>')
                     write('</div></div></div>')
                 } else {
                     /* HTML5 */
